@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Nav bar section */
+
+.header{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    position:absolute;
+}
+
+nav{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 0;
+}
+
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4rem;
+    padding-top: 10px;
+    padding-left: 11%;
+    font-family: 'Bakbak One', cursive;
+}
+
+.logo:hover{
+    color: #fff;
+}
+
+.nav_link{
+    text-align: center;
+    background-color: #ff1616;
+    padding: 10px 15px;
+    border-bottom-left-radius: 18px;
+    float: right;
+    margin: 0 0 0 35%;
+}
+
+
+
+.nav_link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+.nav_link ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-toggler .navbar-toggler-icon{
+    background-image: url(/images/toggles.png);
+    background-size: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Left Sidebar section */
+.left-sidebar{
+    width: 20%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    position:absolute;
+    background-color: #ff1616;
+}
+
+.profile{
+    background-color: #000;
+    position: relative;
+    background-size: 100% 400px;
+    height: 400px;
+    width: 25%;
+    top: 175px;
+    left: 10%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #fff ;
+}
+.profile img{
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    filter: grayscale(0);
+    transition: filter 1s;
+}
+
+.profile img:hover{
+    filter: grayscale(1);
+}
+
+@media (max-width:1000px) and (min-width:300px){
+    .profile{
+        height: 300px;
+        width:40%;
+        left: 2%;
+        background-color: rgb(207, 207, 25);
+    } 
+
+    .profile img{
+        height: 300px;
+    }
+}
+
+.content{
+    position: relative;
+    text-align: left; 
+    top: -100px;
+    margin-left: 50%;   
+}
+.content h1{
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.content h1 span{
+    font-family: 'Corinthia', cursive;
+    color:#ff1616
+}
+.content h1 span:hover{
+    font-size: 5rem;
+}
+
+.content p{
+    font-family: 'Roboto', sans-serif;
+}
+.content p:hover{
+    color: #777;
+
+}
+.content p span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
